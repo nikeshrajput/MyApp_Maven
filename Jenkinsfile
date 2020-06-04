@@ -1,17 +1,17 @@
-pipeline{
+pipeline {
     agent any
     stages {
-        stage("Build"){
+        stage ("Build"){
             steps{
                  mvn clean
             }
         }
-        stage("Test"){
+        stage ("Test"){
             steps{
                 mvn test
             }
         }
-        stage("Package"){
+        stage ("Package"){
             steps{
                 mvn package
             }
