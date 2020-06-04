@@ -14,6 +14,7 @@ pipeline {
         stage ("Deploy"){
             steps{
                 echo "Deployment Started"
+                bat "mvn package"
             }
         }
     }
