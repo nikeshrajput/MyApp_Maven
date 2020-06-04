@@ -11,8 +11,9 @@ pipeline {
                 mvn test
             }
         }
-        stage ("Package"){
+        stage ("Deploy"){
             steps{
+                echo "Deployment Started"
                 mvn package
             }
         }
